@@ -1,2 +1,3 @@
-# app-facebook-pixel
-Adds a simple Facebook Pixel to your website
+# App Hubspot embed
+
+Adds embed code for Hubspot tracking to your website.

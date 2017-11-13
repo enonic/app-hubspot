@@ -20,7 +20,7 @@ apply plugin: 'maven'
 
 app {
     name = project.appName
-    displayName = 'Facebook Pixel'
+    displayName = 'Hubspot'
     vendorName = 'Enonic AS'
     vendorUrl = 'http://enonic.com'
 }
@@ -31,7 +31,7 @@ dependencies {
     include "com.enonic.xp:lib-content:${xpVersion}"
     include "com.enonic.xp:lib-portal:${xpVersion}"
     include "com.enonic.xp:lib-thymeleaf:${xpVersion}"
-    include 'com.enonic.lib:util:1.1.2'
+    include 'com.enonic.lib:util:1.2.0'
 }
 
 repositories {
