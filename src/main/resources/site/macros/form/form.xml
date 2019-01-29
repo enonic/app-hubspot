@@ -1,0 +1,13 @@
+<macro>
+  <display-name>Hubspot Form</display-name>
+  <description>Hubspot Form</description>
+  <form>
+    <input name="form" type="ContentSelector">
+      <label>Form content</label>
+      <occurrences minimum="1" maximum="1"/>
+      <config>
+        <allowContentType>com.enonic.app.hubspot:form</allowContentType>
+      </config>
+    </input>
+  </form>
+</macro>

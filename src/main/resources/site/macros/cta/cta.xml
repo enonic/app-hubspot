@@ -1,0 +1,13 @@
+<macro>
+  <display-name>Hubspot Call To Action</display-name>
+  <description>Hubspot CTA button</description>
+  <form>
+    <input name="cta" type="ContentSelector">
+      <label>Call To Action content</label>
+      <occurrences minimum="1" maximum="1"/>
+      <config>
+        <allowContentType>com.enonic.app.hubspot:cta</allowContentType>
+      </config>
+    </input>
+  </form>
+</macro>
