@@ -11,7 +11,10 @@ exports.macro = function (context) {
         });
 
         return {
-            body: ctaContent.data.embedCode
+            body: ctaContent.data.embedCode,
+            pageContributions: {
+                headEnd: '<style type="text/css">.hs-cta-wrapper a{border:0}</style>'
+            }
         }
     }
 
