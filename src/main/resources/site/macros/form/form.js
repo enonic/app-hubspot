@@ -24,6 +24,7 @@ exports.macro = function (context) {
                     formId: "${formData.formId}"
                 });
             </script>`;
+        // Old embed code for v1 forms
         } else if (formData.embedCode) {
             log.info("embed");
             body = formData.embedCode
