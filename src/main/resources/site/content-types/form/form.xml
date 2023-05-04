@@ -3,9 +3,17 @@
   <display-name>Hubspot Form</display-name>
   <super-type>base:structured</super-type>
   <form>
-    <input name="embedCode" type="TextArea">
-      <label>Embed code</label>
+    <input type="TextLine" name="portalId">
+      <label>Portal id</label>
       <occurrences minimum="1" maximum="1"/>
+    </input>
+    <input type="TextLine" name="formId">
+      <label>Form id</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+    <input type="TextLine" name="regionName">
+      <label>Region name</label>
+      <occurrences minimum="0" maximum="1"/>
     </input>
   </form>
 </content-type>
