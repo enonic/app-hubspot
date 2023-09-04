@@ -3,6 +3,9 @@
   <display-name>Hubspot Form</display-name>
   <super-type>base:structured</super-type>
   <form>
+    <input type="TextLine" name="heading">
+      <label>Form heading</label>
+    </input>
     <input type="TextLine" name="portalId">
       <label>Portal id</label>
       <occurrences minimum="1" maximum="1"/>
