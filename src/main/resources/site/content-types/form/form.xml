@@ -3,9 +3,6 @@
   <display-name>Hubspot Form</display-name>
   <super-type>base:structured</super-type>
   <form>
-    <input type="TextLine" name="heading">
-      <label>Form heading</label>
-    </input>
     <input type="TextLine" name="portalId">
       <label>Portal id</label>
       <occurrences minimum="1" maximum="1"/>
@@ -18,5 +15,14 @@
       <label>Region name</label>
       <occurrences minimum="0" maximum="1"/>
     </input>
+    <field-set>
+      <label>Headless integration</label>
+      <items>
+        <input type="TextLine" name="heading">
+          <label>Form heading</label>
+          <help-text>Optional form headline used in headless context only</help-text>
+        </input>
+      </items>
+    </field-set>
   </form>
 </content-type>
