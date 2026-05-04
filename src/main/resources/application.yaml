@@ -1,0 +1,5 @@
+kind: "Application"
+title: "Hubspot"
+description: "Adds the tracking code for Hubspot to your website"
+vendorName: "Enonic AS"
+vendorUrl: "https://enonic.com"

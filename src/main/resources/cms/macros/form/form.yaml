@@ -1,0 +1,16 @@
+kind: "Macro"
+title: "Hubspot Form"
+description: "Hubspot Form"
+form:
+  - type: "TextLine"
+    name: "formId"
+    label: "Form ID"
+    occurrences:
+      min: 1
+      max: 1
+  - type: "TextLine"
+    name: "heading"
+    label: "Form heading"
+    occurrences:
+      min: 0
+      max: 1

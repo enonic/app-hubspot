@@ -1,0 +1,10 @@
+kind: "ContentType"
+title: "Hubspot Call To Action"
+superType: "base:structured"
+form:
+  - type: "TextArea"
+    name: "embedCode"
+    label: "Embed code"
+    occurrences:
+      min: 1
+      max: 1
