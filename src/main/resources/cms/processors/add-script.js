@@ -1,7 +1,6 @@
 var libs = {
     portal: require('/lib/xp/portal'),
-    thymeleaf: require('/lib/thymeleaf'),
-    util: require('/lib/util')
+    thymeleaf: require('/lib/thymeleaf')
 };
 
 var view = resolve('add-script.html');
@@ -13,7 +12,7 @@ exports.responseProcessor = function (req, res) {
 
 	// If no pixel code added to app, send null so that no script will be generated.
 	var params = {
-		hubspotID: libs.util.data.isSet(siteConfig.hubspotID) ? siteConfig.hubspotID : null
+		hubspotID: siteConfig.hubspotID != null ? siteConfig.hubspotID : null
 	};
 
 	// We don't want this code inside Content Studio, only in live mode.
@@ -21,7 +20,7 @@ exports.responseProcessor = function (req, res) {
 		var metadata = libs.thymeleaf.render(view, params);
 
 		// Force arrays since single values will be return as string instead of array
-		res.pageContributions.headEnd = libs.util.data.forceArray(res.pageContributions.headEnd);
+		res.pageContributions.headEnd = Array.isArray(res.pageContributions.headEnd) ? res.pageContributions.headEnd : [res.pageContributions.headEnd];
 		res.pageContributions.headEnd.push(metadata);
 	}
 
